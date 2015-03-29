@@ -1,14 +1,34 @@
-#jade-stylus-coffeescript-seed
+# Presentahack!
 
-This is an ultra minimal seed for building static websites with JADE, stylus and coffeescript. GulpJS is used to build. 
-The source files are in the src directory.
-The gulpfile only compiles the three src files with their current names, no directory walker or options for multiple sources is included currently. 
+A presentation tool for hackers and makers. 
 
-## Steps:
-From the command line, navigate to the main directory and run, prepend a sudo as you see fit.  
+
+## Problem
+Presenting a hack as a developer is clunky. You step up on stage, talk a bit, then fumble over to localhost to demo your app, or pull out your phone and start fiddling with it to get to your app, or send a command to your robot
+
+## Solution
+No more!
+Thanks to presentahack, the presentation tool for hackers! 
+Presentahack allows developers to preprogramme a route throw the presentation, think of ppt but with not limitations on what you can do! 
+Open a powerpoint? Sure! 
+Go to a URL so you can show us some live data. Why not? 
+Navigate through your webapp without touching the mouse of clicking around? Exactly. 
+Smoothly play a video and continue with your presentation instead of fumbling over to youtube in a web browser. We got your back. 
+
+Presentahack takes input from a Leap motion controller and would've been made to work with Myos but theyre not linux friendly :( PRs welcome!
+
+# Setup
+
+You need a leap motion controller and it's related SDKs. 
+You can set up the routes for your presentation directly in script.js, which is the main entry point for this app/hack. 
+To run 
 ```
-npm install
-gulp
+node script.js
 ```
+And make a tapping gesture over the Leap controller. 
 
-Gulp returns an index.html in the main directory, and scripts.js and styles.css in the assets directory. It will also watch  files in the src directory for changes and recompile. 
+p.s Don't forget to npm install
+
+## Making presentations for this tool
+This repo includes a sample stylus, coffeescript and jade boilerplate you can build on top of rapidly. Less typing and simpler than most HTML presentation tools out there. 
+
