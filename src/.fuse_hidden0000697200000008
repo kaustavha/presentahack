@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title="title"
+    link(rel='stylesheet', href='./assets/styles.css')
+  body
+    h1 Presentations for developers
+    ul
+      li Use live webcontent
+      li Demo applications from localhost
+      li Make bots dance
